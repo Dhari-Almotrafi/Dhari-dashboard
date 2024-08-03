@@ -1380,19 +1380,6 @@ ul {
     transform: scale(1.01);
 }
 
-.plans-page .plan:hover .join {
-    transform: rotate(3600deg);
-    background-size: 500px;
-    /* background-width: ; */
-    /* width: 500px;
-    height: 500px; */
-    z-index: 150;
-    /* transform: translateY(-450px); */
-    font-size: 150%;
-    text-align: center;
-    opacity: 0.9;
-    margin-bottom: 0;
-}
 
 .plans-page .plan .top {
     border: 3px solid white;
@@ -1455,11 +1442,30 @@ ul {
 
 .plans-page .join {
     /* position: absolute; */
-    transform: translateX(50%);
+    /* transform: translateX(50%);
     text-align: center;
-    left: 50%;
+    left: 50%; */
+    transition: 1s;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.2002, 1.01, 1, -0.68);
+    /* transition-timing-function: ease-in-out; */
 
 
+}
+
+.plans-page .plan:hover .join {
+    /* transform: scale(500%); */
+    /* background-size: 500px; */
+    /* background-width: ; */
+    /* width: 500px;
+    height: 500px; */
+    /* z-index: 150; */
+    /* transform: translateY(-450px); */
+    font-size: 200%;
+    width: 500px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 0;
 }
 
 /* End Plans Page */
